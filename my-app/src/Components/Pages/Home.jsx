@@ -19,7 +19,7 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
   return (
     <>
-    <div class="container-fluid">
+    <div class="container">
       <section >
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
   <a class="navbar-brand" href="#">Shivaprasad Pabbu</a>
@@ -50,7 +50,7 @@ const Home = () => {
 
       <section class=" Head d-flex justify-content-center  row text-white ">
         
-      <div class=" col-lg-8 col-md-6 col-sm-12 col-6">    
+      <div class=" col-8">    
             <div class="ml-5">
                <h1>Hello, <br/>
                   I`m Shivaprasad</h1>
@@ -65,8 +65,8 @@ const Home = () => {
                
                   </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 head-image" style={{width:"300px",height:"400px"}}><img src={image11} alt='logo' style={{height:"100%",borderRadius:"50%"}}/></div>
-                 
+{/*                   <div className="col-lg-4 col-md-6 col-sm-12 head-image" style={{width:"300px",height:"400px"}}><img src={image11} alt='logo' style={{height:"100%",borderRadius:"50%"}}/></div>
+                  */}
    </section>
 { /* head sectiion end */ }
  
