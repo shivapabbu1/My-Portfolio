@@ -33,17 +33,9 @@ h1{
 /* about-section */
 
 .about-section{
-    min-height: 80vh;
+    min-height: 50vh;
 }
-.aboutavtar{ 
-   animation: move 5s infinite ;
-}
-@keyframes move {
-    0%   {top: 0px;}
-    50%  {top: -100px;}
-   
-    100% {top: 0px;}
-}
+
 
 /* skill-section */
 .skills{
@@ -58,12 +50,7 @@ h1{
     margin: 20px;
     height: 20%;
 }
-.img{
-    transition: all 5s ease-out;
-}
-.img :hover{
-  transform: translate(0px,-20px);
-}
+
 .img img{
     width: 60%;
     height: 60%;
