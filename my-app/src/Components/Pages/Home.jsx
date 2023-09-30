@@ -143,7 +143,7 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='https://shivaprasad-portfolio.vercel.app/'> View website</a>
+                  <a href='https://shivaprasad-portfolio.vercel.app/' target="blank"> View website</a>
                  </div>
       
     </div>
@@ -159,7 +159,7 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='https://front-end-e-commerce-git-master-shivapabbu1.vercel.app/'> View website</a>
+                  <a href='https://front-end-e-commerce-git-master-shivapabbu1.vercel.app/' target="blank"> View website</a>
                  </div>
       
     </div>
@@ -179,7 +179,7 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='#'> View website</a>
+                  <a href='#' target="blank"> View website</a>
                  </div>
      
     </div>
@@ -193,7 +193,7 @@ const Home = () => {
         <p class="card-text">This project can help us in simple way. we can use as Check list of our daliy activiteis</p>
       </div>
         <div className="card-footer">
-                  <a href='https://todo-web-app-project.vercel.app/'> View website</a>
+                  <a href='https://todo-web-app-project.vercel.app/' target="blank"> View website</a>
                  </div>
       
     </div>
@@ -209,7 +209,7 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='https://react-blogproject.vercel.app/'> View website</a>
+                  <a href='https://react-blogproject.vercel.app/' target="blank"> View website</a>
                  </div>
       
     </div>
