@@ -132,6 +132,36 @@ const Home = () => {
 <section class="project-section" id='projectid'>
   
 <div class="row ">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+    <div class="card h-100">
+      <img src={image8} class="card-img-top"
+        alt="Palm Springs Road" />
+      <div class="card-body bg-danger">
+        <h2 class="card-title">Weather App</h2>
+        <p class="card-text">
+         Simple weather application using javascript and css and weather API.
+        </p>
+      </div>
+        <div className=" card-footer">
+                  <a href='https://javascript-projects-ngx7-git-main-shivapabbu1.vercel.app/' target="blank"> View website</a>
+                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
     <div class="card h-100">
       <img src={image10} class="card-img-top"
@@ -211,6 +241,8 @@ const Home = () => {
         <div className=" card-footer">
                   <a href='https://react-blogproject.vercel.app/' target="blank"> View website</a>
                  </div>
+
+
       
     </div>
   </div>
