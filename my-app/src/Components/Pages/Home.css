@@ -1,4 +1,4 @@
-
+/* 
 
 body{
    
@@ -33,12 +33,20 @@ h1{
 /* about-section */
 
 .about-section{
-    min-height: 50vh;
+    min-height: 80vh;
+}
+.aboutavtar{ 
+   animation: move 5s infinite ;
+}
+@keyframes move {
+    0%   {top: 0px;}
+    50%  {top: -100px;}
+   
+    100% {top: 0px;}
 }
 
-
 /* skill-section */
-.skills{
+/* .skills{
     display: flex;
     flex-direction: row;
   height: 400px;
@@ -58,7 +66,7 @@ h1{
 }
 
 /* project-section */
-.project-section{
+/* .project-section{
      min-height: 100vh;
 }
 .card-img-top{
