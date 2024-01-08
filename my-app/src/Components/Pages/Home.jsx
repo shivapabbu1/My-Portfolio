@@ -7,11 +7,17 @@ import  image3 from "../Assets/js.png"
 import  image4 from "../Assets/react.jpg"
 import  image5 from "../Assets/node.png"
 import  image6 from "../Assets/mongodb.jpg"
-import image7 from "../Assets/todo.jpg"
-import image8 from "../Assets/blog.png"
-import image9 from "../Assets/chat.png"
-import image10 from "../Assets/images.jpg"
-import resume from "../Assets/My Resume.pdf"
+
+import photo from "../Assets/DSC_0024.JPG"
+import resume from "../Assets/ShivaprasadPabbuResume MERN.pdf"
+import ProjectCard  from '../Projectcard/project';
+import Skill from "../Skills/skill"
+import chat from "../Assets/web1.jpg"
+import ecom from "../Assets/web2.jpg"
+import weather from "../Assets/web3.jpg"
+import profile from "../Assets/web4.jpg"
+import todo from "../Assets/web5.jpg"
+
 
 import image11 from "../Assets/images 11.jpg"
 import Typewriter from 'typewriter-effect';
@@ -19,7 +25,7 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
   return (
     <>
-    <div class="container">
+    <div class="container-fluid">
       <section >
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
   <a class="navbar-brand" href="#">Shivaprasad Pabbu</a>
@@ -46,11 +52,11 @@ const Home = () => {
 </nav>
 
       </section>
-    { /* head sectiion start */ }
 
-      <section class=" Head d-flex justify-content-center  row text-white ">
+
+       <section class=" Head d-flex   row text-white ">
         
-      <div class=" col-8">    
+      <div class=" col-lg-8 col-md-6 col-sm-12 col-6">    
             <div class="ml-5">
                <h1>Hello, <br/>
                   I`m Shivaprasad</h1>
@@ -65,24 +71,24 @@ const Home = () => {
                
                   </div>
                   </div>
-{/*                   <div className="col-lg-4 col-md-6 col-sm-12 head-image" style={{width:"300px",height:"400px"}}><img src={image11} alt='logo' style={{height:"100%",borderRadius:"50%"}}/></div>
-                  */}
+                  <div className="col-lg-4 col-md-6 col-sm-12 head-image" style={{width:"300px",height:"400px"}}><img src={image11} alt='logo' style={{height:"100%",borderRadius:"50%"}}/></div>
+                 
    </section>
 { /* head sectiion end */ }
  
 
 { /* about sectiion start */ }
 
-       <section  class="about-section  " id='aboutid'>
+<section  class="about-section  " id='aboutid'>
         <h1 class="text-center ">ABOUT ME</h1> 
             <div className="row   ">
-              <div class="col-12 col-lg-3 col-md-3 col-sm-12 pl-5 aboutavtar  "><img src={image10} alt="avatar" /></div>
-              <div class="col-12 col-lg-8 col-md-12 col-sm-12  ml-5" >
+              <div class="col-12 col-lg-3 col-md-3 col-sm-12 pl-5 aboutavtar  "><img src={profile} alt="avatar" /></div>
+              <div class=" abouttext col-12 col-lg-8 col-md-12 col-sm-12 " >
                 Hello, i am Shivaprasad  <br/>
                  A Focused aspirant MERN stack Developer  with FrontEnd &BackEnd technolgies Buliding web applications that leads to sucess of overall products<br/>
                  <p> I am recent graduate from Teegala Krishna Reddy (TKR) College Of Engineering and have done my major in Electronics & Communication Engineering. <br/> I'm enthusiastic to start my career in Software field.</p>
                   
-               <div class="col-lg-6 col-md-4 col-sm-4 col-4 "><i class="fa fa-download p-2" style={{fontSize:"3rem"}}/> <button class="btn btn-primary" ><a href={resume} download="shivaprasadResume.pdf" style={{width:"200px",height:"100px" ,color:"black"}} >Download cv </a></button></div>
+               <div class="col-lg-6 col-md-4 col-sm-4 col-4 "> <button class="btn btn-primary" ><a href={resume} download="ShivaprasadPabbuResume MERN.pdf" style={{width:"200px",height:"100px" ,color:"black"}} >Download cv </a></button></div>
                
             </div>
             </div>
@@ -90,40 +96,36 @@ const Home = () => {
 
        </section>
      
-{ /* second sectiion end */ }
-        <h1 class="text-center mt-10">SKILLS</h1> 
-        <section class="skills" id='skillid'>
-          <div className="container d-flex justify-content-center align-items-center " style={{minHeight:"50vh"}}>
-        <div className=" row ">
-              <div className=" img col-6 col-lg-2 col-md-3 col-sm-6 ">
-                    <img src={image1} alt='htmllogo'/> 
-                    <h5>HTML</h5> 
-               </div>
-               <div className=" img col-6 col-lg-2 col-md-4 col-sm-6 ">
-                    <img src={image2} alt='csslogo'/>
-                    <h5>css:</h5> 
-                </div>
-                <div className=" img col-6 col-lg-2 col-md-4 col-sm-6 ">
-                    <img src={image3} alt='jslogo'/> 
-                    <h5>javascript:</h5>
-                 </div>
-                 <div className=" img col-6 col-lg-2 col-md-4 col-sm-6 ">
-                    <img src={image4} alt='reactlogo'/> 
-                    <h5>React:</h5> 
-                 </div>
-                 <div className=" img col-6 col-lg-2 col-md-4 col-sm-6 ">
-                    <img src={image5} alt='nodelogo'/> 
-                    <h5>Node.js:</h5>
-                 </div>
-                 <div className=" img col-6 col-lg-2 col-md-4 col-sm-6 ">
-                    <img src={image6} alt='dblogo'/>
-                    <h5>MongoDB:</h5> 
-                </div>
-                
-                
-        </div>
-        </div>
-
+<section className="skills" id='skillid' >
+  <h1 className="text-center">SKILLS</h1>
+  <div className="container" >
+    <div className="row justify-content-center align-items-center">
+    <Skill
+      img={image1}
+      name="HTML"
+      />
+      <Skill
+      img={image2}
+      name="CSS"
+      />
+      <Skill
+      img={image3}
+      name="JavaScript"
+      />
+      <Skill
+      img={image4}
+      name="React"
+      />
+      <Skill
+      img={image5}
+      name="NodeJs"
+      />
+      <Skill
+      img={image6}
+      name="MongoDB"
+      />
+    </div>
+  </div>
 </section>
 
 
@@ -132,36 +134,6 @@ const Home = () => {
 <section class="project-section" id='projectid'>
   
 <div class="row ">
-
-      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-    <div class="card h-100">
-      <img src={image8} class="card-img-top"
-        alt="Palm Springs Road" />
-      <div class="card-body bg-danger">
-        <h2 class="card-title">Weather App</h2>
-        <p class="card-text">
-         Simple weather application using javascript and css and weather API.
-        </p>
-      </div>
-        <div className=" card-footer">
-                  <a href='https://javascript-projects-ngx7-git-main-shivapabbu1.vercel.app/' target="blank"> View website</a>
-                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
     <div class="card h-100">
       <img src={image10} class="card-img-top"
@@ -173,31 +145,11 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='https://shivaprasad-portfolio.vercel.app/' target="blank"> View website</a>
+                  <a href='#'> View website</a>
                  </div>
       
     </div>
   </div>
-       <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
-    <div class="card h-100">
-      <img src={image11} class="card-img-top"
-        alt="Skyscrapers" />
-      <div class="card-body bg-primary">
-        <h2 class="card-title">E-commerce</h2>
-        <p class="card-text">
-        Simple demo application of e-commerce front-end application.
-        </p>
-      </div>
-        <div className=" card-footer">
-                  <a href='https://front-end-e-commerce-git-master-shivapabbu1.vercel.app/' target="blank"> View website</a>
-                 </div>
-      
-    </div>
-  </div>
-
-
-
-  
   <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
     <div class="card h-100">
       <img src={image9} class="card-img-top"
@@ -209,7 +161,7 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='#' target="blank"> View website</a>
+                  <a href='#'> View website</a>
                  </div>
      
     </div>
@@ -223,7 +175,7 @@ const Home = () => {
         <p class="card-text">This project can help us in simple way. we can use as Check list of our daliy activiteis</p>
       </div>
         <div className="card-footer">
-                  <a href='https://todo-web-app-project.vercel.app/' target="blank"> View website</a>
+                  <a href='https://todo-web-app-project.vercel.app/'> View website</a>
                  </div>
       
     </div>
@@ -239,62 +191,39 @@ const Home = () => {
         </p>
       </div>
         <div className=" card-footer">
-                  <a href='https://react-blogproject.vercel.app/' target="blank"> View website</a>
+                  <a href='https://react-blogproject.vercel.app/'> View website</a>
                  </div>
-
-
       
     </div>
   </div>
 </div>
 </section>
-
-
-
-
-  <section class="contactme bg-dark text-center text-white" id='contactid'>
-  <h1 class="text-center">Contact ME</h1>
-      <div>
-        <h2>Get in Touch with me</h2>
-      </div>
-      <div>
-        <p>I'm enthusiastic to start my career in your organisation. </p>
-       <p>I can assure you that I'm Adaptable, Passionate, Motivated, Goal-oriented, Proactive in work.</p>
-      </div>
+<section class="contactme bg-dark text-center text-white" id="contactid">
+  <div class="contact-content">
+     <div class="contact-info">
+      <h1>Contact ME</h1>
+      <h2>Get in Touch with me</h2>
+      <p>I'm enthusiastic to start my career in your organisation.</p>
+      <p>I can assure you that I'm Adaptable, Passionate, Motivated, Goal-oriented, Proactive in work.</p>
       
-    
      
-
-
-    <div >
-      <a class="btn btn-outline-light btn-floating m-1" href=" mailto:shivapabbu718@gmail.com" role="button"
-        ><i class="fa fa-envelope "></i
-      ></a>
-
-    
-
-    
-      <a class="btn btn-outline-light btn-floating m-1" href="www.linkedin.com/in/
-pabbu-shivaprasad-215687225
-" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/shivapabbu1" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-
+      <div class="contact-links">
+        <a class="btn btn-outline-light btn-floating m-1" href="mailto:shivapabbu718@gmail.com" role="button"><i class="fa fa-envelope"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/pabbu-shivaprasad-215687225" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/shivapabbu1" role="button"><i class="fab fa-github"></i></a>
       </div>
 
+      
       <div class="text-center p-4">
-    © Shivaprasad Pabbu
-    
-  </div>
-  </section>
+        © Shivaprasad  Pabbu
+      </div>
     </div>
-        
-           
-        </> 
+  
+  </div>
+</section>
+
+    </div>
+     </> 
   )
 }
 
